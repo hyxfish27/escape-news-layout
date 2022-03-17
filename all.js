@@ -3,8 +3,6 @@ const corsURL = "https://escape-cors-anywhere.herokuapp.com/"; // use cors-anywh
 const apiUrl = "https://hex-escape-room.herokuapp.com";
 const apiPath = "/api/cors/news";
 
-
-
 const app = Vue.createApp({
     data() {
         return {
@@ -47,7 +45,7 @@ const app = Vue.createApp({
     },
     mounted() {
         this.getNews();
-        axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+        // axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
     }
 });
 
